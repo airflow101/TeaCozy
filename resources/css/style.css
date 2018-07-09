@@ -1,5 +1,5 @@
 body{
-  margin: 0;
+  margin: 0 auto;
   font-family: Helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
@@ -9,6 +9,17 @@ body{
 }
 
 
+h2, h3, h4{
+  margin: 0 auto;
+}
+
+h2, h4{
+  padding: 10px;
+}
+
+h3{
+  padding-top: 26px;
+}
 header{
   display: flex;
   flex-wrap: wrap;
@@ -34,18 +45,19 @@ header nav{
 span a{
   color: seashell;
   text-direction: underline;
+  padding: 10px;
 }
 
 
-main{
-  padding-top: 70px;
+#mission, #tea, #locations{
+  margin: auto;
 }
 
 #mission{
   background-image: url('../images/img-mission-background.jpg');
   width: 1200px;
   height: 700px;
-  margin-top: 70px;
+  padding-top: 70px;
   display: flex;
   align-items: center;
 }
@@ -57,18 +69,41 @@ main{
 }
 
 #tea{
+  padding: 70px 0;
   width: 1000px;
 }
+
+#locations{
+  background-image: url('../images/img-locations-background.jpg');
+  width: 1200px;
+  height: 500px;
+  padding-top: 70px;
+}
+
 
 .items{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+
+#tea .item{
+  margin: 15px;
+}
+
+
+#locations .item{
+  margin: 15px 20px;
 }
 
 .item{
-  padding: 15px;
+  background-color: black;
+  opacity: 1;
+  width: 300px;
 }
+
+
 .item img{
   width: 300px;
   height: 200px;
@@ -78,4 +113,9 @@ main{
   margin-top: 10px;
   font-weight: bold;
   display: block;
+}
+
+footer{
+  padding-left: 20px;
+  text-align: left;
 }
